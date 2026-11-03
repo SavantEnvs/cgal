@@ -1,0 +1,10 @@
+project: savantenvs/cgal
+target: fuzz_off
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_off/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_off
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzz_off/fuzz_off.dict

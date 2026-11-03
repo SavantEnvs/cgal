@@ -1,0 +1,17 @@
+cube_off: ok=1 vertices=8 faces=12 closed=1 volume=8 area=24
+tetrahedron_polyhedron: vertices=4 facets=4 closed=1 abs_volume=0.166666666667
+sphere_ply_soup: ok=1 points=162 polygons=320
+sphere_stl_soup: ok=1 points=162 polygons=320
+pig_obj_soup: ok=1 points=468 polygons=891
+orientation_above_line: 1
+orientation_below_line: -1
+orientation_on_line: 0
+square_polygon: area=4 convex=1 simple=1 orientation=1
+delaunay2_square_center: vertices=5 faces=4 valid=1
+cdt2_crossing_diagonals: vertices=5 constrained_edges=4 faces=4 valid=1
+delaunay3_tetrahedron: vertices=4 cells=1 dimension=3 valid=1
+convex_hull3_cube_with_interior: vertices=8 faces=12 volume=8
+kdtree_two_nearest: 0.14 1.94 nearest_point=0 0 0
+kdtree_sphere_r1.5: 1
+kdtree_sphere_r1.8: 9
+corefine_union_cubes: ok=1 volume=12 closed=1

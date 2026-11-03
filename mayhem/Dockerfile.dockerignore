@@ -1,0 +1,5 @@
+# BuildKit prefers this over a root .dockerignore for `-f mayhem/Dockerfile`.
+# .git is kept (the image holds the full mayhem branch). Only local build outputs are pruned.
+build/
+cgal-kat
+ctrf-report.json
