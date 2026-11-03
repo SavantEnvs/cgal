@@ -1,0 +1,10 @@
+project: savantenvs/cgal
+target: fuzz_ply
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ply/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_ply
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzz_ply/fuzz_ply.dict

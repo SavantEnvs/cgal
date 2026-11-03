@@ -1,0 +1,10 @@
+project: savantenvs/cgal
+target: fuzz_polyhedron_kd
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_polyhedron_kd/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_polyhedron_kd
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzz_polyhedron_kd/fuzz_polyhedron_kd.dict

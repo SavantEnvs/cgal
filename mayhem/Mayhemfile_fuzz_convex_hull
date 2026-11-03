@@ -1,0 +1,9 @@
+project: savantenvs/cgal
+target: fuzz_convex_hull
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_convex_hull/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_convex_hull
+    libfuzzer: true
+    timeout: 10
